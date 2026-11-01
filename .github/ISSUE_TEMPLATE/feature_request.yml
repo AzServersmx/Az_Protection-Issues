@@ -1,0 +1,25 @@
+name: "Sugerir una función"
+description: "Propón una mejora para Az_Protection."
+title: "[Sugerencia] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: "¿Qué te gustaría mejorar?"
+      description: "Describe la necesidad o el problema que quieres resolver."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "¿Cómo debería funcionar?"
+      description: "Explica tu propuesta desde el punto de vista del jugador o administrador."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternativas o información adicional (opcional)"
+    validations:
+      required: false
