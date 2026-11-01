@@ -1,24 +1,38 @@
-# Documentación de Az_Protection 1.0.0
+# Guía de Az_Protection 1.0.0
 
-La documentación oficial está organizada en cinco páginas para la Wiki: **Home**, **Instalación**, **Comandos de Az_Protection**, **Guía de permisos** y **Solución de problemas**, más la navegación `_Sidebar`.
+Az_Protection permite proteger terrenos mediante estandartes especiales. Cada estandarte crea una región de WorldGuard al colocarse sobre el suelo.
 
-## Protecciones
+## Niveles de protección
 
 | Estandarte | ID | Área |
-|---|---|---|
+| --- | --- | --- |
 | Inicial | `gratis` | 8 × 8 |
 | Común | `nivel_1` | 16 × 16 |
 | Especial | `nivel_2` | 32 × 32 |
-| Rara | `nivel_3` | 64 × 64 |
-| Épica | `nivel_4` | 128 × 128 |
+| Raro | `nivel_3` | 64 × 64 |
+| Épico | `nivel_4` | 128 × 128 |
 | Leyenda | `premium` | 256 × 256 |
 
-## Visualización del perímetro
+## Uso
 
-Haz clic derecho con la mano principal en un estandarte de protección colocado para ver un contorno horizontal verde durante aproximadamente diez segundos. El contorno es visible sólo para el jugador que interactúa y no modifica la región.
+Coloca el estandarte de protección sobre el suelo en una zona libre. No se permite colocarlo en paredes ni crear una protección que se superponga con una región existente.
 
-## Requisitos y soporte
+Para visualizar los límites, haz clic derecho con la mano principal en el estandarte colocado. Aparecerá un contorno verde durante aproximadamente diez segundos, visible para quien lo activó.
 
-Entorno de validación: Paper 26.3, Java 25, WorldGuard 7.0.20 y WorldEdit 7.4.6. La función de visualización del perímetro forma parte de Az_Protection 1.0.0.
+Para retirar tu protección, rompe directamente el estandarte. En modo supervivencia podrás recogerlo y volver a utilizarlo.
 
-Para incidencias, abre un [reporte](https://github.com/AzServersmx/Az_Protection-Issues/issues). El código fuente es privado.
+## Comando para administradores
+
+`/azprotection give <jugador> <tipo>`
+
+Permiso: `azprotection.admin`.
+
+## Requisitos
+
+- Servidor Paper para Minecraft 26.3.
+- Java 25.
+- WorldEdit y WorldGuard compatibles.
+
+## Ayuda
+
+Consulta la [Wiki](https://github.com/AzServersmx/Az_Protection-Issues/wiki) o [reporta un problema](https://github.com/AzServersmx/Az_Protection-Issues/issues).
